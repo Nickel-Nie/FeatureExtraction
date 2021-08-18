@@ -39,10 +39,77 @@ class PcapFileParser:
         self.md5path = md5path
 
     def parseFile(self):
+
+
+        # 判断文件类型
+        blockTypeBytes = self.inputFile.read(4)
+        self.inputFile.seek(-4, 1)  # 返回文件开始位置
+
+        if blockTypeBytes == b"\xd4\xc3\xb2\xa1":
+            # pcap类型
+            pass
+        elif blockTypeBytes == b"\x0a\x0d\x0d\x0a":
+            # pcapng类型
+            self.parsePcapngFile()
+            pass
+        else:
+            logger.error("非pcap/pcapng文件类型")
+            exit(0)
+
+    def parsePcapFile(self):
+        packetsCount = 0
+        availablePacketsCount = 0
+        infoList = []
+
+        self.inputFile.seek(24, 1)  # 首先跳过24字节pcap文件头
+
+        while True:
+            packetHeaderBytes = self.inputFile.read(16)
+            if len(packetHeaderBytes) == 0:
+                break
+            packetsCount +=1
+            captureLen = int.from_bytes(packetHeaderBytes[8:12], "little", signed=False)
+
+            packetDataBytes = self.inputFile.read(captureLen)
+
+            # 进行长度判断+报文数量判断(前m个范围内的报文)，通过后才进行业务负载的提取
+            if availablePacketsCount < self.firstmPakcets and self.__isInRange(packetDataBytes):
+                servicePayload = self.__extractServicePayload(packetDataBytes)
+                # print(servicePayload)
+                md5 = self.__calculateMd5(servicePayload)
+                if len(md5) != 0:
+                    # 如果长度为0说明负载长度不足n字节
+                    availablePacketsCount += 1
+                    infoList.append(dict(packetNo=packetsCount,
+                                         packetLength=len(packetDataBytes),
+                                         firstNbytes=servicePayload[:self.firstnBytes * 2],
+                                         md5=md5,
+                                         isFeature=0  # -1表示不是特征，0表示暂未判断，1表示是特征
+                                         ))
+                else:
+                    pass
+                    # print(f"负载长度不足{self.firstnBytes}字节")
+            elif availablePacketsCount >= self.firstmPakcets:
+                # print(f"已获取满足条件的{self.firstmPakcets}个报文，该报文略去")
+                pass
+            elif not self.__isInRange(packetDataBytes):
+                pass
+                # print(f"报文长度不在{self.packetLengthRange.rangeString}内")
+            else:
+                logger.critical("未知错误")
+
+        logger.debug(
+            f"{self.filename}文件处理完成,{packetsCount}个packet。其中有{availablePacketsCount}个packet满足条件，并写入文件中")
+        # print("="*50)
+        self.__saveMd5File(infoList, availablePacketsCount)
+        self.inputFile.close()
+
+    def parsePcapngFile(self):
         packetsCount = 0
         availablePacketsCount = 0
         blocksCount = 0
         infoList = []
+
         # 每个循环处理一个Block
         while True:
             blockTypeBytes = self.inputFile.read(4)
@@ -66,7 +133,7 @@ class PcapFileParser:
             # print(f'No.{packetsCount}: ', end='')
             packetDataBytes = self.__extractPacketsData(blockType, blockBodyBytes)
 
-            #进行长度判断+报文数量判断(前m个范围内的报文)，通过后才进行业务负载的提取
+            # 进行长度判断+报文数量判断(前m个范围内的报文)，通过后才进行业务负载的提取
             if availablePacketsCount < self.firstmPakcets and self.__isInRange(packetDataBytes):
                 servicePayload = self.__extractServicePayload(packetDataBytes)
                 # print(servicePayload)
@@ -78,7 +145,7 @@ class PcapFileParser:
                                          packetLength=len(packetDataBytes),
                                          firstNbytes=servicePayload[:self.firstnBytes * 2],
                                          md5=md5,
-                                         isFeature = 0  # -1表示不是特征，0表示暂未判断，1表示是特征
+                                         isFeature=0  # -1表示不是特征，0表示暂未判断，1表示是特征
                                          ))
                 else:
                     pass
@@ -90,14 +157,16 @@ class PcapFileParser:
                 pass
                 # print(f"报文长度不在{self.packetLengthRange.rangeString}内")
             else:
-                logger.critical("未知错误")
+                logger.error("未知错误")
 
             self.inputFile.seek(4, 1)  # 跳过最后的块长度，进行下一个块的处理
 
-        logger.debug(f"{self.filename}文件处理完成，共包含{blocksCount}个Block,{packetsCount}个packet。其中有{availablePacketsCount}个packet满足条件，并写入文件中")
+        logger.debug(
+            f"{self.filename}文件处理完成，共包含{blocksCount}个Block,{packetsCount}个packet。其中有{availablePacketsCount}个packet满足条件，并写入文件中")
         # print("="*50)
         self.__saveMd5File(infoList, availablePacketsCount)
         self.inputFile.close()
+
 
     def __calculateMd5(self, servicePayload:str) -> str:
         if len(servicePayload) < self.firstnBytes:

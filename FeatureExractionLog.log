@@ -552,3 +552,73 @@
 18 Aug 2021 10:44:31 FeatureHandler.py DEBUG App_Facebook_ViewAndComment_01_ST文件中No.212与App_Facebook_ViewAndComment_01_FU文件中No.214md5值相同
 18 Aug 2021 10:44:32 FeatureHandler.py INFO [200-300]-32-All_MD5目录处理完成
 18 Aug 2021 10:44:32 FeatureHandler.py INFO [200-300]-32-All_FEATURE目录处理完成
+18 Aug 2021 18:07:46 FileHandler.py INFO 创建目录：[200-300]-32-All_MD5
+18 Aug 2021 18:07:46 FileHandler.py INFO 创建目录：[200-300]-32-All_FEATURE
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_Facebook_Post_01_ST.pcapng文件处理完成，共包含10832个Block,10830个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_Facebook_ViewAndComment_01_ST.pcapng文件处理完成，共包含12201个Block,12198个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_PayPal_ViewNotification_ST.pcapng文件处理完成，共包含1104个Block,1101个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_Youtube_Upload_01_ST.pcapng文件处理完成，共包含1698个Block,1696个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_Youtube_WatchAndComment_01_ST.pcapng文件处理完成，共包含15385个Block,15382个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 FeatureHandler.py DEBUG C:\Users\a9241\Desktop\Learning materials\研究生\抓包任务20210611\AllStoryFiles\[200-300]-32-All_MD5目录下的json文件有：['App_Facebook_Post_01_ST.json', 'App_Facebook_ViewAndComment_01_ST.json', 'App_PayPal_ViewNotification_ST.json', 'App_Youtube_Upload_01_ST.json', 'App_Youtube_WatchAndComment_01_ST.json']
+18 Aug 2021 18:07:46 FeatureHandler.py INFO [200-300]-32-All_MD5目录处理完成
+18 Aug 2021 18:07:46 FeatureHandler.py INFO [200-300]-32-All_FEATURE目录处理完成
+18 Aug 2021 18:07:46 FileHandler.py INFO 创建目录：[100-200]-32-All_MD5
+18 Aug 2021 18:07:46 FileHandler.py INFO 创建目录：[100-200]-32-All_FEATURE
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_Facebook_Post_01_ST.pcapng文件处理完成，共包含10832个Block,10830个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_Facebook_ViewAndComment_01_ST.pcapng文件处理完成，共包含12201个Block,12198个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_PayPal_ViewNotification_ST.pcapng文件处理完成，共包含1104个Block,1101个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_Youtube_Upload_01_ST.pcapng文件处理完成，共包含1698个Block,1696个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 PcapFileParser.py DEBUG App_Youtube_WatchAndComment_01_ST.pcapng文件处理完成，共包含15385个Block,15382个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 18:07:46 FeatureHandler.py DEBUG C:\Users\a9241\Desktop\Learning materials\研究生\抓包任务20210611\AllStoryFiles\[100-200]-32-All_MD5目录下的json文件有：['App_Facebook_Post_01_ST.json', 'App_Facebook_ViewAndComment_01_ST.json', 'App_PayPal_ViewNotification_ST.json', 'App_Youtube_Upload_01_ST.json', 'App_Youtube_WatchAndComment_01_ST.json']
+18 Aug 2021 18:07:46 FeatureHandler.py INFO [100-200]-32-All_MD5目录处理完成
+18 Aug 2021 18:07:46 FeatureHandler.py INFO [100-200]-32-All_FEATURE目录处理完成
+18 Aug 2021 19:01:31 FileHandler.py INFO 创建目录：[200-300]-32-All_MD5
+18 Aug 2021 19:01:31 FileHandler.py INFO 创建目录：[200-300]-32-All_FEATURE
+18 Aug 2021 19:01:31 PcapFileParser.py DEBUG APP_WhatsAPP_chat01_ST.pcap文件处理完成，共包含73个Block,70个packet。其中有2个packet满足条件，并写入文件中
+18 Aug 2021 19:01:31 PcapFileParser.py DEBUG APP_WhatsAPP_status01_ST.pcap文件处理完成，共包含112个Block,109个packet。其中有1个packet满足条件，并写入文件中
+18 Aug 2021 19:02:14 FileHandler.py INFO 创建目录：[200-300]-32-All_MD5
+18 Aug 2021 19:02:14 FileHandler.py INFO 创建目录：[200-300]-32-All_FEATURE
+18 Aug 2021 19:02:14 PcapFileParser.py DEBUG APP_WhatsAPP_chat01_ST.pcap文件处理完成，共包含73个Block,70个packet。其中有2个packet满足条件，并写入文件中
+18 Aug 2021 19:02:14 PcapFileParser.py DEBUG APP_WhatsAPP_status01_ST.pcap文件处理完成，共包含112个Block,109个packet。其中有1个packet满足条件，并写入文件中
+18 Aug 2021 19:07:32 FileHandler.py INFO [200-300]-32-All_MD5目录已存在
+18 Aug 2021 19:07:32 FileHandler.py INFO [200-300]-32-All_FEATURE目录已存在
+18 Aug 2021 19:07:56 PcapFileParser.py DEBUG APP_WhatsAPP_chat01_ST.pcap文件处理完成，共包含73个Block,70个packet。其中有2个packet满足条件，并写入文件中
+18 Aug 2021 19:08:00 PcapFileParser.py DEBUG APP_WhatsAPP_status01_ST.pcap文件处理完成，共包含112个Block,109个packet。其中有1个packet满足条件，并写入文件中
+18 Aug 2021 19:08:36 FileHandler.py INFO [200-300]-32-All_MD5目录已存在
+18 Aug 2021 19:08:36 FileHandler.py INFO [200-300]-32-All_FEATURE目录已存在
+18 Aug 2021 19:08:39 PcapFileParser.py DEBUG APP_WhatsAPP_chat01_ST.pcap文件处理完成，共包含73个Block,70个packet。其中有2个packet满足条件，并写入文件中
+18 Aug 2021 19:08:41 PcapFileParser.py DEBUG APP_WhatsAPP_status01_ST.pcap文件处理完成，共包含112个Block,109个packet。其中有1个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 FileHandler.py INFO [200-300]-32-All_MD5目录已存在
+18 Aug 2021 19:49:09 FileHandler.py INFO [200-300]-32-All_FEATURE目录已存在
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG APP_WhatsAPP_chat01_ST.pcap文件处理完成，共包含73个Block,70个packet。其中有2个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG APP_WhatsAPP_status01_ST.pcap文件处理完成，共包含112个Block,109个packet。其中有1个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG search_bing_viewweb_001_ST .pcap文件处理完成，共包含1857个Block,1854个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG VideoSite_YouTube_SignInAndWatchAndComment_002_ST.pcap文件处理完成，共包含18900个Block,18897个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG App_Facebook_Post_01_ST.pcapng文件处理完成，共包含10832个Block,10830个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG App_Facebook_ViewAndComment_01_ST.pcapng文件处理完成，共包含12201个Block,12198个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG APP_Twitter_follow01_ST.pcapng文件处理完成，共包含603个Block,600个packet。其中有13个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG APP_Twitter_tweet01_ST.pcapng文件处理完成，共包含932个Block,929个packet。其中有9个packet满足条件，并写入文件中
+18 Aug 2021 19:49:09 PcapFileParser.py DEBUG App_Youtube_Upload_01_ST.pcapng文件处理完成，共包含1698个Block,1696个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG Game_dota2_matchagame_001_ST.pcapng文件处理完成，共包含43217个Block,43213个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG search_google_viewweb_001_ST.pcapng文件处理完成，共包含4680个Block,4677个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG VideoSite_YouTube_SignInAndWatchVideo_001_ST.pcapng文件处理完成，共包含15784个Block,15781个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 FeatureHandler.py DEBUG C:\Users\a9241\Desktop\Learning materials\研究生\抓包任务20210611\test\[200-300]-32-All_MD5目录下的json文件有：['App_Facebook_Post_01_ST.json', 'App_Facebook_ViewAndComment_01_ST.json', 'APP_Twitter_follow01_ST.json', 'APP_Twitter_tweet01_ST.json', 'APP_WhatsAPP_chat01_ST.json', 'APP_WhatsAPP_status01_ST.json', 'App_Youtube_Upload_01_ST.json', 'Game_dota2_matchagame_001_ST.json', 'search_bing_viewweb_001_ST .json', 'search_google_viewweb_001_ST.json', 'VideoSite_YouTube_SignInAndWatchAndComment_002_ST.json', 'VideoSite_YouTube_SignInAndWatchVideo_001_ST.json']
+18 Aug 2021 19:49:10 FeatureHandler.py INFO [200-300]-32-All_MD5目录处理完成
+18 Aug 2021 19:49:10 FeatureHandler.py INFO [200-300]-32-All_FEATURE目录处理完成
+18 Aug 2021 19:49:10 FileHandler.py INFO 创建目录：[100-200]-32-All_MD5
+18 Aug 2021 19:49:10 FileHandler.py INFO 创建目录：[100-200]-32-All_FEATURE
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG APP_WhatsAPP_chat01_ST.pcap文件处理完成，共包含73个Block,70个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG APP_WhatsAPP_status01_ST.pcap文件处理完成，共包含112个Block,109个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG search_bing_viewweb_001_ST .pcap文件处理完成，共包含1857个Block,1854个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG VideoSite_YouTube_SignInAndWatchAndComment_002_ST.pcap文件处理完成，共包含18900个Block,18897个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG App_Facebook_Post_01_ST.pcapng文件处理完成，共包含10832个Block,10830个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG App_Facebook_ViewAndComment_01_ST.pcapng文件处理完成，共包含12201个Block,12198个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG APP_Twitter_follow01_ST.pcapng文件处理完成，共包含603个Block,600个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG APP_Twitter_tweet01_ST.pcapng文件处理完成，共包含932个Block,929个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG App_Youtube_Upload_01_ST.pcapng文件处理完成，共包含1698个Block,1696个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG Game_dota2_matchagame_001_ST.pcapng文件处理完成，共包含43217个Block,43213个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG search_google_viewweb_001_ST.pcapng文件处理完成，共包含4680个Block,4677个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 PcapFileParser.py DEBUG VideoSite_YouTube_SignInAndWatchVideo_001_ST.pcapng文件处理完成，共包含15784个Block,15781个packet。其中有20个packet满足条件，并写入文件中
+18 Aug 2021 19:49:10 FeatureHandler.py DEBUG C:\Users\a9241\Desktop\Learning materials\研究生\抓包任务20210611\test\[100-200]-32-All_MD5目录下的json文件有：['App_Facebook_Post_01_ST.json', 'App_Facebook_ViewAndComment_01_ST.json', 'APP_Twitter_follow01_ST.json', 'APP_Twitter_tweet01_ST.json', 'APP_WhatsAPP_chat01_ST.json', 'APP_WhatsAPP_status01_ST.json', 'App_Youtube_Upload_01_ST.json', 'Game_dota2_matchagame_001_ST.json', 'search_bing_viewweb_001_ST .json', 'search_google_viewweb_001_ST.json', 'VideoSite_YouTube_SignInAndWatchAndComment_002_ST.json', 'VideoSite_YouTube_SignInAndWatchVideo_001_ST.json']
+18 Aug 2021 19:49:10 FeatureHandler.py INFO [100-200]-32-All_MD5目录处理完成
+18 Aug 2021 19:49:10 FeatureHandler.py INFO [100-200]-32-All_FEATURE目录处理完成
